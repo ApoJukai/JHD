@@ -20,7 +20,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #0b0510;
+            background-color: #0a1628;
             overflow: hidden;
             color: white;
         }
@@ -41,9 +41,9 @@
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 107, 0.15);
             border-radius: 25px;
-            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 255, 107, 0.1);
             padding: 40px 80px;
             display: flex;
             flex-direction: column;
@@ -61,7 +61,11 @@
 
         .logo { 
             font-size: 1.5rem; 
-            font-weight: 700; 
+            font-weight: 700;
+            background: linear-gradient(135deg, #00ff6b, #00d084);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         nav ul { 
@@ -81,7 +85,8 @@
         }
 
         nav a:hover, nav a.active { 
-            font-weight: 600; 
+            font-weight: 600;
+            color: #00ff6b;
         }
 
         nav a.active::after {
@@ -89,7 +94,7 @@
             position: absolute;
             width: 100%;
             height: 2px;
-            background: white;
+            background: linear-gradient(90deg, #00ff6b, #00d084);
             bottom: -5px;
             left: 0;
         }
@@ -108,7 +113,7 @@
         }
         
         .content-area::-webkit-scrollbar-thumb { 
-            background: rgba(255,255,255,0.2); 
+            background: rgba(0, 255, 107, 0.3); 
             border-radius: 10px; 
         }
 
@@ -150,9 +155,10 @@
             font-size: 1.5rem; 
             font-weight: 600; 
             margin-bottom: 20px; 
-            background: -webkit-linear-gradient(#fff, #d1c4e9); 
+            background: linear-gradient(135deg, #00ff6b, #00d084); 
             -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         .hero-text p { 
@@ -169,8 +175,8 @@
         }
         
         .btn-download {
-            background: white; 
-            color: #100b16; 
+            background: linear-gradient(135deg, #00ff6b, #00d084); 
+            color: #0a1628; 
             padding: 12px 28px; 
             border-radius: 30px;
             text-decoration: none; 
@@ -180,8 +186,9 @@
         }
         
         .btn-download:hover { 
-            background: #f0f0f0; 
-            transform: translateY(-2px); 
+            background: linear-gradient(135deg, #39ff14, #00ff6b);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 255, 107, 0.3);
         }
 
         .social-icons { 
@@ -191,7 +198,7 @@
         
         .social-icons a {
             color: white; 
-            border: 1px solid rgba(255, 255, 255, 0.4); 
+            border: 1px solid rgba(0, 255, 107, 0.3); 
             width: 40px; 
             height: 40px;
             border-radius: 50%; 
@@ -203,9 +210,11 @@
         }
         
         .social-icons a:hover { 
-            background: white; 
-            color: #4a00e0; 
+            background: rgba(0, 255, 107, 0.2);
+            color: #00ff6b;
+            border-color: #00ff6b;
             transform: rotate(360deg) scale(1.2);
+            box-shadow: 0 0 20px rgba(0, 255, 107, 0.4);
         }
 
         .hero-image-container {
@@ -213,8 +222,9 @@
             height: 350px; 
             border-radius: 50%; 
             padding: 8px;
-            background: rgba(255, 255, 255, 0.1); 
-            box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+            background: rgba(0, 255, 107, 0.1); 
+            box-shadow: 0 0 40px rgba(0, 255, 107, 0.2);
+            border: 1px solid rgba(0, 255, 107, 0.2);
         }
         
         .hero-image-container img { 
@@ -230,9 +240,13 @@
             font-size: 2rem; 
             font-weight: 600; 
             margin-bottom: 20px; 
-            border-bottom: 1px solid rgba(255,255,255,0.2); 
+            border-bottom: 1px solid rgba(0, 255, 107, 0.2); 
             padding-bottom: 10px; 
             margin-top: 10px;
+            background: linear-gradient(135deg, #ffffff, #00ff6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         .section-text { 
@@ -251,16 +265,18 @@
         }
         
         .card {
-            background: rgba(255, 255, 255, 0.05); 
+            background: rgba(0, 255, 107, 0.05); 
             padding: 20px; 
             border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.1); 
+            border: 1px solid rgba(0, 255, 107, 0.15); 
             transition: 0.3s;
         }
         
         .card:hover { 
-            background: rgba(255, 255, 255, 0.1); 
-            transform: translateY(-5px); 
+            background: rgba(0, 255, 107, 0.1); 
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 255, 107, 0.2);
+            border-color: rgba(0, 255, 107, 0.4);
         }
 
         .card-header {
@@ -272,12 +288,12 @@
         
         .card h3 { 
             font-size: 1.1rem; 
-            color: #d1c4e9; 
+            color: #00ff6b; 
         }
         
         .card i { 
             font-size: 1.5rem; 
-            color: white; 
+            color: #00d084; 
         }
         
         .card p { 
@@ -296,12 +312,12 @@
         }
 
         .tag {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(0, 255, 107, 0.08);
+            border: 1px solid rgba(0, 255, 107, 0.25);
             padding: 10px 18px;
             border-radius: 30px;
             font-size: 0.85rem;
-            color: #e6e6e6;
+            color: #00ff6b;
             transition: 0.3s;
             display: flex;
             align-items: center;
@@ -309,10 +325,11 @@
         }
 
         .tag:hover {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border-color: rgba(255, 255, 255, 0.5);
+            background: rgba(0, 255, 107, 0.2);
+            color: #39ff14;
+            border-color: rgba(0, 255, 107, 0.5);
             transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 107, 0.2);
         }
 
         /* Contact Specific */
@@ -332,7 +349,7 @@
         
         .contact-item i { 
             font-size: 1.5rem; 
-            color: #d1c4e9; 
+            color: #00ff6b; 
             width: 30px; 
             text-align: center; 
         }
@@ -362,7 +379,7 @@
                 <div class="hero-text">
                     <h1>John Harley<br>De Leon</h1>
                     <h2>Digital Leader & Industrial Engineer</h2>
-                    <p>Industrial Engineer with over 10 years of hands-on manufacturing experience driving digital transformation, operational excellence, and Smart Factory initiatives. Proven ability to translate data into actionable insights for engineered-to-order operations.</p>
+                    <p>Industrial Engineer with over 10 years of hands-on manufacturing experience driving digital transformation, operational excellence, and Smart Factory initiatives. Proven ability to bridge technology and operations for measurable business impact.</p>
                     <div class="cta-group">
                         <a href="John_Harley_De_Leon_CV.docx" class="btn-download">Download CV</a>
                         <div class="social-icons">
@@ -380,8 +397,8 @@
             <!-- ABOUT SECTION -->
             <section id="about" class="section">
                 <h2 class="section-title">About Me</h2>
-                <p class="section-text">I am a Site Cybersecurity & Digital Leader with a strong foundation in Methods Engineering and Continuous Improvement. Currently, I lead the site digital transformation in Gyöngyös, integrating IT/OT projects, deploying SAP S/4HANA as a Local Business Process Owner, and ensuring shop-floor cybersecurity compliance.</p>
-                <p class="section-text">By combining Lean Six Sigma methodologies (Green Belt certified) with modern data analytics (Tableau, SQL), I bridge the gap between traditional industrial engineering and the modern Smart Factory roadmap, ensuring resilient, efficient, and data-driven manufacturing operations.</p>
+                <p class="section-text">I am a Site Cybersecurity & Digital Leader with a strong foundation in Methods Engineering and Continuous Improvement. Currently, I lead the site digital transformation initiatives at a Tier-1 automotive manufacturing facility, driving Smart Factory adoption, SAP S/4HANA implementation, and OT cybersecurity frameworks.</p>
+                <p class="section-text">By combining Lean Six Sigma methodologies (Green Belt certified) with modern data analytics (Tableau, SQL), I bridge the gap between traditional industrial operations and cutting-edge digital solutions. My expertise spans production optimization, system design, and cross-functional leadership to deliver sustainable business results.</p>
             </section>
 
             <!-- PORTFOLIO SECTION -->
@@ -393,28 +410,28 @@
                             <i class="fa-solid fa-network-wired"></i>
                             <h3>Smart Factory & SAP S/4HANA</h3>
                         </div>
-                        <p>Spearheading the Smart Factory site roadmap and digital transformation in Gyöngyös. Serving as Local Business Process Owner (BPO) for SAP S/4HANA production execution rollout, deploying minimum mandatory requirements (MMRs), and managing Smart Transformation Stories.</p>
+                        <p>Spearheading the Smart Factory site roadmap and digital transformation in Gyöngyös. Serving as Local Business Process Owner (BPO) for SAP S/4HANA production execution systems, overseeing integration and change management across shop floor operations.</p>
                     </div>
                     <div class="card">
                         <div class="card-header">
                             <i class="fa-solid fa-chart-line"></i>
                             <h3>Lean Diagnostic Savings</h3>
                         </div>
-                        <p>Delivered high-impact Lean diagnostic and process-redesign projects generating approximately EUR 260,000 in annual savings. Achieved substantial waste reduction, optimized line balancing, and enhanced throughput across production cells.</p>
+                        <p>Delivered high-impact Lean diagnostic and process-redesign projects generating approximately EUR 260,000 in annual savings. Achieved substantial waste reduction, optimized material flow, and enhanced production throughput through VSM and Kaizen methodologies.</p>
                     </div>
                     <div class="card">
                         <div class="card-header">
                             <i class="fa-solid fa-code"></i>
                             <h3>Digital Solutions & LDS/DISS</h3>
                         </div>
-                        <p>Acted as key user and tool champion for the Lean Digitization System (LDS) and Digitized Idea and SIM System (DISS). Built advanced Tableau performance dashboards and web utilities that convert raw manufacturing metrics into real-time operational decisions.</p>
+                        <p>Acted as key user and tool champion for the Lean Digitization System (LDS) and Digitized Idea and SIM System (DISS). Built advanced Tableau performance dashboards and web-based solutions to drive data-driven decision making across the site.</p>
                     </div>
                     <div class="card">
                         <div class="card-header">
                             <i class="fa-solid fa-shield-halved"></i>
                             <h3>OT Asset Cybersecurity</h3>
                         </div>
-                        <p>Maintained the site digital landscape and secure OT asset inventories using VESTA and Claroty. Proactively monitored, analyzed, and remediated critical operational technology threats alongside the Central Security Hub.</p>
+                        <p>Maintained the site digital landscape and secure OT asset inventories using VESTA and Claroty. Proactively monitored, analyzed, and remediated critical operational technology vulnerabilities to ensure business continuity.</p>
                     </div>
                 </div>
             </section>
@@ -555,18 +572,18 @@
         resize();
 
         const waves = [
-            { color: 'rgba(142, 45, 226, 0.4)', amplitude: 120, frequency: 0.002, speed: 0.015, yOffset: 0 },
-            { color: 'rgba(74, 0, 224, 0.4)', amplitude: 150, frequency: 0.0015, speed: 0.01, yOffset: 20 },
-            { color: 'rgba(255, 0, 127, 0.3)', amplitude: 90, frequency: 0.003, speed: 0.02, yOffset: -30 },
-            { color: 'rgba(142, 45, 226, 0.2)', amplitude: 200, frequency: 0.001, speed: 0.008, yOffset: 50 }
+            { color: 'rgba(0, 255, 107, 0.3)', amplitude: 120, frequency: 0.002, speed: 0.015, yOffset: 0 },
+            { color: 'rgba(0, 212, 132, 0.3)', amplitude: 150, frequency: 0.0015, speed: 0.01, yOffset: 20 },
+            { color: 'rgba(57, 255, 20, 0.25)', amplitude: 90, frequency: 0.003, speed: 0.02, yOffset: -30 },
+            { color: 'rgba(0, 255, 107, 0.2)', amplitude: 200, frequency: 0.001, speed: 0.008, yOffset: 50 }
         ];
 
         function animateWaves() {
             ctx.globalCompositeOperation = 'source-over'; 
             
             let bgGradient = ctx.createLinearGradient(0, 0, width, height);
-            bgGradient.addColorStop(0, '#0b0510');
-            bgGradient.addColorStop(1, '#1a0b2e');
+            bgGradient.addColorStop(0, '#0a1628');
+            bgGradient.addColorStop(1, '#0f2818');
             ctx.fillStyle = bgGradient;
             ctx.fillRect(0, 0, width, height);
 
